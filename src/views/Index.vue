@@ -30,6 +30,7 @@ export default {
   font-size: 16px;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   #boby {
     position: fixed;
     bottom: 0;
