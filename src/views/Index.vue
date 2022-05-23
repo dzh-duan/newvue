@@ -10,25 +10,30 @@
 </template>
 
 <script>
-import footerview from '../components/footer.vue'
+import footerview from "../components/footer.vue";
 export default {
-  name: 'index',
+  name: "index",
   components: {
-    footerview
+    footerview,
   },
-  data () {
-    return {}
+  data() {
+    return {};
   },
-  created () {
-  },
+  created() {},
   methods: {},
-  mounted () {
-  }
-}
+  mounted() {},
+};
 </script>
 
 <style scoped lang="scss">
-.index{
+.index {
   font-size: 16px;
+  width: 100%;
+  height: 100%;
+  #boby {
+    position: fixed;
+    bottom: 0;
+    left: 1px;
+  }
 }
 </style>

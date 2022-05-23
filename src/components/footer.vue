@@ -13,9 +13,6 @@
         width:100%;
         display: flex;
         justify-content:center;
-        position: absolute;
-        bottom: 0;
-        left: 1px;
         padding-right: 1px;
       .router-link-active{
         color: #6d00be;
