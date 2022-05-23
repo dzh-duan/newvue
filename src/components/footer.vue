@@ -1,24 +1,38 @@
 
 <template>
   <div id="boby">
-    <router-link class="home"  to="/home"><span>home</span> </router-link>
-    <router-link class="activity"  to="/activity"><span>activity</span></router-link>
-    <router-link class="pay"  to="/pay"><span>pay</span></router-link>
-    <router-link class="service"  to="/service"><span>service</span></router-link>
-    <router-link class="user" to="/user"><span>user</span></router-link>
+    <router-link class="home"  to="/home"><span class="iconfont icon-zhuye"></span> </router-link>
+    <router-link class="activity"  to="/activity"><span class="iconfont icon-goutongye_santiaogang_tiaozhuanxuanzehaizi"></span></router-link>
+    <router-link class="pay"  to="/pay"><span class="iconfont icon-zuoyouhuadong"></span></router-link>
+    <router-link class="service"  to="/service"><span class="iconfont icon-kefu"></span></router-link>
+    <router-link class="user" to="/user"><span class="iconfont icon-gerenzhongxin"></span></router-link>
   </div>
 </template>
 <style lang="scss" scoped>
     #boby {
         width:100%;
         display: flex;
-        justify-content: space-between;
-        padding:0 1px;
+        justify-content:center;
+        position: absolute;
+        bottom: 0;
+        left: 1px;
+        padding-right: 1px;
+      .router-link-active{
+        color: #6d00be;
+      }
         a{
-            color: red;
+            color: #bbbbbb;
             width: 20%;
             height: 60px;
-
+            span {
+              font-size: 24px;
+              display:inline-block;
+              width: 24px;
+              height: 24px;
+              line-height: 60px;
+              padding-bottom:1px;
+              box-sizing: border-box; 
+            }
         };
         };
 </style>

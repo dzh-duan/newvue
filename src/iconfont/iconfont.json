@@ -1,0 +1,44 @@
+{
+  "id": "3419262",
+  "name": "11",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "740854",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "869170",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "1317820",
+      "name": "沟通页_三条杠_跳转选择孩子",
+      "font_class": "goutongye_santiaogang_tiaozhuanxuanzehaizi",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "3640183",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5287871",
+      "name": "左右滑动",
+      "font_class": "zuoyouhuadong",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    }
+  ]
+}
