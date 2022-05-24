@@ -1,24 +1,37 @@
 <template>
-    <div class="activity">
-     activity
+  <div class="activity">
+    <div class="activity_nav">
+      <div class="container">
+        <div class=""></div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'activity',
+  name: "activity",
   components: {},
-  data () {
-    return {}
+  data() {
+    return {};
   },
-  created () {
-  },
+  created() {},
   methods: {},
-  mounted () {
-  }
-}
+  mounted() {},
+};
 </script>
 
 <style scoped lang="scss">
+.activity {
+  background: linear-gradient(to bottom, #fcedff 0%, #ffffff 100%);
+  margin-bottom: 80px;
+  .activity_nav{
+    padding: 54px 15px 0;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    .container{
 
+    }
+  }
+}
 </style>

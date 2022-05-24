@@ -42,10 +42,10 @@
     <div class="buttom">
       <div class="dalizi">
         <div class="jianto" v-for="(b, index) in list" :key="index">
-          <div class="duanzhihui"></div>
+          <div class="duanzhihui" :class="b.status==1?'background':''"></div>
           <div class="xiaofangkuai">
             <h4 class="xiaofangkuai-left">{{ b.name }}</h4>
-            <img class="material-icons" src="" alt="" />
+            <img class="material-icons" src="../../assets/arrow-right.png" alt="" />
           </div>
         </div>
       </div>
@@ -62,39 +62,51 @@ export default {
       list: [
         {
           name: "Withdrawal",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Team reports",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "recharge record",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Withdrawal record",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Personal data",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Announcement",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Shopping address",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Binding Bank card",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Change Password",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Finacial",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Language",
+          status:'0'
         },
         {
-          name: "Withdrawal",
+          name: "Logout",
+          status:'1'
         },
       ],
     };
@@ -262,6 +274,10 @@ export default {
           opacity: 0.3;
           margin-right: 15px;
           border-radius: 10px;
+          box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+        }
+        .background{
+          background: #fff !important;
         }
         .xiaofangkuai {
           flex: 1;
@@ -270,6 +286,11 @@ export default {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          .xiaofangkuai-left{
+            font-size: 16px;
+            color: #6d00be;
+            font-weight: 500;
+          }
           .material-icons {
             width: 24px;
             height: 24px;

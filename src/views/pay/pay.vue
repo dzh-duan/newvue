@@ -122,6 +122,7 @@ export default {
   .bottom {
     width: 345px;
     height: 200px;
+    margin: 0 auto;
     margin-top: 46.8px;
     border-radius: 10px;
     background: linear-gradient(135deg, #a700ff 0%, #00189a 100%);
