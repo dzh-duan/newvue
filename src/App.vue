@@ -8,6 +8,8 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: Microsoft YaHei;
+  
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

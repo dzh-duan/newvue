@@ -112,7 +112,7 @@ export default {
   .bottom {
     width: 100%;
     background: #fff;
-    z-index: 100;
+    z-index: 2;
     position: absolute;
     border-radius: 12px;
     top: 112.5px;

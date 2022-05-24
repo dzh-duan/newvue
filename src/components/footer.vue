@@ -14,6 +14,9 @@
         display: flex;
         justify-content:center;
         padding-right: 1px;
+        z-index: 999;
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0px -3px 10px rgb(0 0 0 / 10%);
       .router-link-active{
         color: #6d00be;
       }
