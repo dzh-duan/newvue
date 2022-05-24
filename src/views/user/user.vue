@@ -31,7 +31,24 @@
           <img src="../../assets/jiahao.png" alt="" />
         </button>
       </div>
-      <div></div>
+      <div class="caixukun">
+        <div class="luhan">
+          $30.00 <br />
+          Available balance
+        </div>
+        <div class="huangzitao">$0.00 <br />Frozen amount</div>
+      </div>
+    </div>
+    <div class="buttom">
+      <div class="dalizi">
+        <div class="jianto" v-for="(b, index) in list" :key="index">
+          <div class="duanzhihui"></div>
+          <div class="xiaofangkuai">
+            <h4 class="xiaofangkuai-left">{{ b.name }}</h4>
+            <img class="material-icons" src="" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -41,7 +58,46 @@ export default {
   name: "user",
   components: {},
   data() {
-    return {};
+    return {
+      list: [
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+        {
+          name: "Withdrawal",
+        },
+      ],
+    };
   },
   created() {},
   methods: {},
@@ -51,14 +107,16 @@ export default {
 
 <style scoped lang="scss">
 .user {
+  margin-bottom: 80px;
+  padding-top: 54px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #fcedff 0%, #ffffff 100%);
   .top {
     box-sizing: border-box;
-    margin: 54px auto 0;
+    margin: 0 auto;
     border-radius: 10px;
     width: 345px;
     height: 190px;
-    background-color: #a700ff;
-    background: -webkit-linear-gradient(-45deg, #a700ff 0%, #00189a 100%);
     background: linear-gradient(135deg, #a700ff 0%, #00189a 100%);
     padding: 15px;
 
@@ -114,7 +172,7 @@ export default {
     height: 180px;
     margin-top: -100px;
     background: #fff;
-    margin: -100px auto 0;
+    margin: -100px auto 24px;
     border-radius: 10px;
     box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 10%);
     .top2 {
@@ -154,10 +212,72 @@ export default {
           height: 18px;
         }
       }
-      .colit{
+      .colit {
         padding: 0 15px;
         width: 109.5px;
         display: inline-block;
+      }
+    }
+    .caixukun {
+      width: 345px;
+      height: 69px;
+      box-sizing: border-box;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      .luhan {
+        display: inline-block;
+      }
+      .huangzitao {
+        display: inline-block;
+      }
+    }
+  }
+  .buttom {
+    padding: 0 15px;
+    box-sizing: border-box;
+   
+    
+    .dalizi {
+       border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 30%);
+      padding: 15px 0;
+      .jianto {
+        &:last-of-type{
+          border: none;
+          
+        }
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        // background-color: #6d00be;
+        
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        .duanzhihui {
+          width: 50px;
+          height: 50px;
+          background: linear-gradient(135deg, #a700ff 0%, #00189a 100%);
+          opacity: 0.3;
+          margin-right: 15px;
+          border-radius: 10px;
+        }
+        .xiaofangkuai {
+          flex: 1;
+          margin: 0 auto;
+          display: inline-block;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .material-icons {
+            width: 24px;
+            height: 24px;
+            display: block;
+          }
+          h4 {
+          }
+        }
       }
     }
   }
