@@ -42,7 +42,9 @@
     <div class="buttom">
       <div class="dalizi">
         <div class="jianto" v-for="(b, index) in list" :key="index">
-          <div class="duanzhihui" :class="b.status==1?'background':''"></div>
+          <div class="duanzhihui" :class="b.status==1?'background':''">
+            <img class="spang" :src="b.img" alt="">
+          </div>
           <div class="xiaofangkuai">
             <h4 class="xiaofangkuai-left">{{ b.name }}</h4>
             <img class="material-icons" src="../../assets/arrow-right.png" alt="" />
@@ -62,50 +64,62 @@ export default {
       list: [
         {
           name: "Withdrawal",
+          img:require("../../assets/youshangjianto.png"),
           status:'0'
         },
         {
           name: "Team reports",
+          img:require("../../assets/yonghuzu.png"),
           status:'0'
         },
         {
           name: "recharge record",
+          img:require("../../assets/heijiahao.png"),
           status:'0'
         },
         {
           name: "Withdrawal record",
+          img:require("../../assets/zhaoxiangji.png"),
           status:'0'
         },
         {
           name: "Personal data",
+          img:require("../../assets/xunhuan.png"),
           status:'0'
         },
         {
           name: "Announcement",
+          img:require("../../assets/tixing.png"),
           status:'0'
         },
         {
           name: "Shopping address",
+          img:require("../../assets/xingyongka.png"),
           status:'0'
         },
         {
           name: "Binding Bank card",
+          img:require("../../assets/xingyongka.png"),
           status:'0'
         },
         {
           name: "Change Password",
+          img:require("../../assets/jiesuo.png"),
           status:'0'
         },
         {
           name: "Finacial",
+          img:require("../../assets/gupiao.png"),
           status:'0'
         },
         {
           name: "Language",
+          img:require("../../assets/diqiu.png"),
           status:'0'
         },
         {
           name: "Logout",
+          img:require("../../assets/qidong.png"),
           status:'1'
         },
       ],
@@ -275,6 +289,14 @@ export default {
           margin-right: 15px;
           border-radius: 10px;
           box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .spang{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+          }
         }
         .background{
           background: #fff !important;
